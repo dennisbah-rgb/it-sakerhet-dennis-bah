@@ -21,150 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 210,
-              "y": 120
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "använadre"
-              },
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 1,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "7bc9cc01-9163-4a67-ae26-b4fe50b21eb7"
-                },
-                {
-                  "group": "right",
-                  "id": "4898c59e-0c2d-4918-94af-4ce1198b122f"
-                },
-                {
-                  "group": "bottom",
-                  "id": "5d835b01-87a1-4a47-b505-d1c28432fbd7"
-                },
-                {
-                  "group": "left",
-                  "id": "984d1803-90c1-4200-a364-a28f8310d717"
-                }
-              ]
-            },
-            "id": "f2e7d52e-38f9-475e-b44f-f3ecaa54de66",
-            "data": {
-              "type": "tm.Process",
-              "name": "använadre",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": [
-                {
-                  "id": "ab7cb7cf-7488-470a-99fa-d8dd14a85df6",
-                  "title": "Stulna inloggningsuppgifter",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "En angripare kan använda stulna användarnamn och lösenord för att logga in som en annan användare.",
-                  "mitigation": "Använd stark autentisering, säkra lösenord och HTTPS.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 1,
-                "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
-              }
-            }
-          },
-          {
-            "position": {
-              "x": 320,
-              "y": 270
+              "x": 200,
+              "y": 130
             },
             "size": {
               "width": 112.5,
@@ -172,11 +30,11 @@
             },
             "attrs": {
               "text": {
-                "text": "Chatapplikation"
+                "text": "användare"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -264,27 +122,185 @@
                 }
               ]
             },
-            "id": "b5253c97-b549-4367-aeeb-3b1f98aded98",
-            "zIndex": 2,
+            "id": "a5811d61-8468-4ede-90a1-898b5c1b810e",
+            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Chatapplikation",
+              "name": "användare",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
-            },
-            "children": [
-              "3229c443-1e16-4594-b3d3-438a8feed4c2"
-            ]
+              "threats": [
+                {
+                  "id": "4d678759-89ab-467a-82f1-a1132e1c71a2",
+                  "title": "Stulna inloggningsuppgifter",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "En angripare kan använda stulna användarnamn och lösenord för att logga in som en annan användare.",
+                  "mitigation": "Använd stark autentisering, säkra lösenord och HTTPS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            }
           },
           {
             "position": {
-              "x": 710,
-              "y": 360
+              "x": 500,
+              "y": 270
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Chatapplikation"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0b03b587-9123-4e5f-adff-ec4c72b8af9c"
+                },
+                {
+                  "group": "right",
+                  "id": "12dc5c36-2957-4051-9bfb-b72b2364c24d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b34abdc9-8047-491f-9e37-4c5324a8ea2b"
+                },
+                {
+                  "group": "left",
+                  "id": "f1ff9508-761f-406e-be58-020a43d285f6"
+                }
+              ]
+            },
+            "id": "f2a11d96-cf2e-47db-8fa1-2be5fd8a0791",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Chatapplikation",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "284c23f6-c0c0-4287-90fd-2838d37796aa",
+                  "title": "Manipulering av användardata",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "En angripare kan försöka ändra information under kommunikationen mellan klient och server.",
+                  "mitigation": "Använd HTTPS och validera all data på serversidan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "children": []
+          },
+          {
+            "position": {
+              "x": 730,
+              "y": 440
             },
             "size": {
               "width": 120,
@@ -292,14 +308,16 @@
             },
             "attrs": {
               "text": {
-                "text": " Användardatabas "
+                "text": "Användardatabas"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -387,26 +405,43 @@
                 }
               ]
             },
-            "id": "84bf4f87-d703-4e14-abfa-be05638736f1",
+            "id": "c97bc1a9-d23e-4058-89a7-a7b7f139fa1f",
             "zIndex": 3,
             "data": {
               "type": "tm.Store",
-              "name": " Användardatabas ",
+              "name": "Användardatabas",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
-            },
-            "children": [
-              "c384d2e7-695b-48fb-bbc6-ee4f19c9bd80"
-            ]
+              "threats": [
+                {
+                  "id": "0b0e52ad-4961-4654-aba6-a0b8380951a1",
+                  "title": "Exponering av användardata",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Känslig användarinformation kan exponeras om databasen eller kommunikationen inte skyddas tillräckligt.",
+                  "mitigation": "Begränsa åtkomst till databasen och kryptera känslig information.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            }
           },
           {
             "shape": "flow",
@@ -428,7 +463,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Användardata",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -442,19 +477,18 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Användardata"
             ],
-            "id": "3229c443-1e16-4594-b3d3-438a8feed4c2",
+            "id": "a0c17c9c-756e-448a-bf32-c1bf56b67762",
             "source": {
-              "x": 340,
-              "y": 300
+              "cell": "f2a11d96-cf2e-47db-8fa1-2be5fd8a0791",
+              "port": "12dc5c36-2957-4051-9bfb-b72b2364c24d"
             },
             "target": {
-              "cell": "b5253c97-b549-4367-aeeb-3b1f98aded98",
-              "port": "54230f4d-2773-44f4-9b57-04de5bef96f6"
+              "cell": "c97bc1a9-d23e-4058-89a7-a7b7f139fa1f",
+              "port": "51e6cfcf-c853-48ad-8519-d69306c1b93e"
             },
-            "vertices": [],
-            "parent": "b5253c97-b549-4367-aeeb-3b1f98aded98"
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -492,65 +526,19 @@
             "labels": [
               "Registrerings- och inloggningsuppgifter"
             ],
-            "id": "e9f78b71-1de9-4249-9b0e-d7fee225a5c7",
+            "id": "12935112-5e92-4792-b1c6-01263535c1f5",
             "source": {
-              "x": 270,
-              "y": 152
+              "cell": "a5811d61-8468-4ede-90a1-898b5c1b810e",
+              "port": "fffa777b-faad-42b0-a811-b546e923f00f"
             },
             "target": {
-              "cell": "b5253c97-b549-4367-aeeb-3b1f98aded98",
-              "port": "54230f4d-2773-44f4-9b57-04de5bef96f6"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Inloggningsresultat",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Inloggningsresultat"
-            ],
-            "id": "4a82e699-31b0-43fc-ae5b-4d131bfc1775",
-            "source": {
-              "x": 450,
-              "y": 230
-            },
-            "target": {
-              "cell": "84bf4f87-d703-4e14-abfa-be05638736f1",
-              "port": "51e6cfcf-c853-48ad-8519-d69306c1b93e"
+              "cell": "f2a11d96-cf2e-47db-8fa1-2be5fd8a0791",
+              "port": "f1ff9508-761f-406e-be58-020a43d285f6"
             },
             "vertices": [
               {
-                "x": 500,
-                "y": 270
+                "x": 300,
+                "y": 280
               }
             ]
           },
@@ -574,7 +562,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "inloggningsresultat",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -588,19 +576,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "inloggningsresultat"
             ],
-            "id": "c384d2e7-695b-48fb-bbc6-ee4f19c9bd80",
+            "id": "e8b18a09-ee82-4667-8420-883ffe8f1a94",
             "source": {
-              "cell": "84bf4f87-d703-4e14-abfa-be05638736f1",
-              "port": "51e6cfcf-c853-48ad-8519-d69306c1b93e"
+              "cell": "f2a11d96-cf2e-47db-8fa1-2be5fd8a0791",
+              "port": "0b03b587-9123-4e5f-adff-ec4c72b8af9c"
             },
             "target": {
-              "x": 610,
-              "y": 440
+              "cell": "a5811d61-8468-4ede-90a1-898b5c1b810e",
+              "port": "6f36c92a-1c05-4386-87e5-7e40c1dbdf5a"
             },
-            "vertices": [],
-            "parent": "84bf4f87-d703-4e14-abfa-be05638736f1"
+            "vertices": [
+              {
+                "x": 510,
+                "y": 160
+              }
+            ]
           }
         ]
       },
@@ -875,6 +867,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 5
   }
 }
