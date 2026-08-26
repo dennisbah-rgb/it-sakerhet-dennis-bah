@@ -1,7 +1,7 @@
 {
   "version": "2.6.2",
   "release_version": "",
-  "released_at": "",
+  "released_at": "2026-08-27",
   "summary": {
     "title": "It securtity Threat Model",
     "owner": "Dennis Bah",
@@ -13,7 +13,7 @@
     "diagrams": [
       {
         "id": 1,
-        "title": "New STRIDE diagram",
+        "title": "Registrering och inloggning",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -598,7 +598,7 @@
       },
       {
         "id": 2,
-        "title": "New STRIDE diagram",
+        "title": "Sökning efter användare",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -732,7 +732,7 @@
       },
       {
         "id": 3,
-        "title": "New STRIDE diagram",
+        "title": "Skicka och ta emot meddelanden",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
