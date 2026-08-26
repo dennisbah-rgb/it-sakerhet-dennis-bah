@@ -33,8 +33,8 @@
                 "text": "använadre"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -131,18 +131,40 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ab7cb7cf-7488-470a-99fa-d8dd14a85df6",
+                  "title": "Stulna inloggningsuppgifter",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "En angripare kan använda stulna användarnamn och lösenord för att logga in som en annan användare.",
+                  "mitigation": "Använd stark autentisering, säkra lösenord och HTTPS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
             "position": {
-              "x": 340,
-              "y": 200
+              "x": 320,
+              "y": 270
             },
             "size": {
               "width": 112.5,
@@ -261,8 +283,8 @@
           },
           {
             "position": {
-              "x": 550,
-              "y": 290
+              "x": 710,
+              "y": 360
             },
             "size": {
               "width": 120,
@@ -422,58 +444,10 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "c384d2e7-695b-48fb-bbc6-ee4f19c9bd80",
-            "source": {
-              "cell": "84bf4f87-d703-4e14-abfa-be05638736f1",
-              "port": "51e6cfcf-c853-48ad-8519-d69306c1b93e"
-            },
-            "target": {
-              "cell": "84bf4f87-d703-4e14-abfa-be05638736f1",
-              "port": "51e6cfcf-c853-48ad-8519-d69306c1b93e"
-            },
-            "vertices": [],
-            "parent": "84bf4f87-d703-4e14-abfa-be05638736f1"
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
             "id": "3229c443-1e16-4594-b3d3-438a8feed4c2",
             "source": {
-              "x": 360,
-              "y": 230
+              "x": 340,
+              "y": 300
             },
             "target": {
               "cell": "b5253c97-b549-4367-aeeb-3b1f98aded98",
@@ -579,6 +553,54 @@
                 "y": 270
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "c384d2e7-695b-48fb-bbc6-ee4f19c9bd80",
+            "source": {
+              "cell": "84bf4f87-d703-4e14-abfa-be05638736f1",
+              "port": "51e6cfcf-c853-48ad-8519-d69306c1b93e"
+            },
+            "target": {
+              "x": 610,
+              "y": 440
+            },
+            "vertices": [],
+            "parent": "84bf4f87-d703-4e14-abfa-be05638736f1"
           }
         ]
       },
@@ -853,6 +875,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
