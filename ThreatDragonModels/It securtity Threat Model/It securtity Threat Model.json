@@ -723,8 +723,8 @@
           },
           {
             "position": {
-              "x": 420,
-              "y": 270
+              "x": 460,
+              "y": 280
             },
             "size": {
               "width": 60,
@@ -735,8 +735,8 @@
                 "text": "sök användare"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -833,18 +833,40 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9a7533d6-0f26-4397-baf9-62200bb9b10f",
+                  "title": "Missbruk av sökfunktionen",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "En angripare kan skicka ett stort antal sökförfrågningar och därigenom belasta servern och databasen.",
+                  "mitigation": "Inför rate limiting och begränsa antalet sökförfrågningar per användare.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
             "position": {
-              "x": 610,
-              "y": 380
+              "x": 680,
+              "y": 410
             },
             "size": {
               "width": 120,
@@ -986,6 +1008,73 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "användardata",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "76762cd4-fa27-4e07-9500-88b4ba9b9698",
+                  "title": "Exponering av användardata",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Sökfunktionen kan returnera mer information om användare än vad som behövs, vilket kan leda till att känsliga uppgifter exponeras.",
+                  "mitigation": "Begränsa vilken användarinformation som returneras och kontrollera behörigheter på serversidan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "användardata"
+            ],
+            "id": "f5c7810e-0d2e-461c-ad6d-f712577c46c8",
+            "source": {
+              "cell": "7d811865-a36d-4c4b-bf5b-64670d086fb1",
+              "port": "f6ada414-0f0c-4505-bf6b-f76f4b37e671"
+            },
+            "target": {
+              "cell": "cda4f8e5-7983-4c14-a8b1-c3c0dfba8834",
+              "port": "eba814c6-9f6d-49d5-a1a6-2e0daddaa757"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "sökförfrågan",
               "description": "",
               "outOfScope": false,
@@ -1040,87 +1129,10 @@
                 "y": 250
               },
               {
-                "x": 370,
-                "y": 270
+                "x": 360,
+                "y": 310
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "användardata",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "76762cd4-fa27-4e07-9500-88b4ba9b9698",
-                  "title": "Exponering av användardata",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Sökfunktionen kan returnera mer information om användare än vad som behövs, vilket kan leda till att känsliga uppgifter exponeras.",
-                  "mitigation": "Begränsa vilken användarinformation som returneras och kontrollera behörigheter på serversidan.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 8,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "användardata"
-            ],
-            "id": "f5c7810e-0d2e-461c-ad6d-f712577c46c8",
-            "source": {
-              "cell": "7d811865-a36d-4c4b-bf5b-64670d086fb1",
-              "port": "f6ada414-0f0c-4505-bf6b-f76f4b37e671"
-            },
-            "target": {
-              "cell": "cda4f8e5-7983-4c14-a8b1-c3c0dfba8834",
-              "port": "eba814c6-9f6d-49d5-a1a6-2e0daddaa757"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
           }
         ]
       },
@@ -1261,6 +1273,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 9
   }
 }
