@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "a5811d61-8468-4ede-90a1-898b5c1b810e",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "användare",
@@ -175,6 +175,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -258,7 +259,6 @@
               ]
             },
             "id": "f2a11d96-cf2e-47db-8fa1-2be5fd8a0791",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Chatapplikation",
@@ -323,6 +323,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -406,7 +407,6 @@
               ]
             },
             "id": "c97bc1a9-d23e-4058-89a7-a7b7f139fa1f",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "Användardatabas",
